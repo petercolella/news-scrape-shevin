@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/Shevinw13/News-Scrape/issues"
   },
-  "homepage": "https://github.com/Shevinw13/News-Scrape#readme"
+  "homepage": "https://github.com/Shevinw13/News-Scrape#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.2",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
+  }
 }
