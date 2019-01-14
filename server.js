@@ -26,7 +26,12 @@ app.use(
 app.use(express.static(path.join(__dirname, 'public')));
 
 //mongodb://username:password@server_name:port/db_name
-mongoose.connect('mongodb://localhost:27017/newscrape_db');
+// mongoose.connect('mongodb://localhost:27017/newscrape_db');
+
+var MONGODB_URI =
+  process.env.MONGODB_URI || 'mongodb://localhost/mongoHeadlines';
+mongoose.connect(MONGODB_URI);
+
 var db = mongoose.connection;
 
 db.on('error', function(error) {
