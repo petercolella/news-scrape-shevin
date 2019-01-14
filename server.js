@@ -19,7 +19,8 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 //mongodb://username:password@server_name:port/db_name
 mongoose.connect("mongodb://localhost:27017/newscrape_db");
